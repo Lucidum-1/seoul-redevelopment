@@ -1,0 +1,17 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>준비 중</title><style>
+:root{--bg:#fff;--fg:#1b1b1f;--muted:#6b6b76;--line:#e4e4ea;--accent:#2f6fde;--bar:#eef1f8}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#141418;--fg:#ececf1;--muted:#9a9aa6;--line:#2c2c34;--accent:#7aa5ff;--bar:#23232b}}
+:root[data-theme="dark"]{--bg:#141418;--fg:#ececf1;--muted:#9a9aa6;--line:#2c2c34;--accent:#7aa5ff;--bar:#23232b}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.55 -apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Noto Sans KR",sans-serif}
+main{max-width:720px;margin:0 auto;padding:16px}a{color:var(--accent)}h1{font-size:1.4em;margin:.2em 0}h2{font-size:1.05em;margin:0 0 .4em}
+.muted{color:var(--muted)}.small{font-size:.85em}.note{font-size:.8em;color:var(--muted)}
+dl{display:grid;grid-template-columns:max-content 1fr;gap:2px 12px;margin:12px 0}dt{color:var(--muted)}dd{margin:0}
+.blk{border-top:1px solid var(--line);padding:12px 0}.bar{height:8px;background:var(--bar);border-radius:4px;overflow:hidden}.bar span{display:block;height:100%;background:var(--accent)}
+.cards{list-style:none;padding:0;margin:0;display:grid;gap:8px}.cards li{border:1px solid var(--line);border-radius:8px;padding:8px 10px}
+table{border-collapse:collapse;width:100%}td,th{text-align:left;padding:4px 6px;border-bottom:1px solid var(--line)}
+nav{font-size:.9em;margin-bottom:8px}input{width:100%;padding:10px;font-size:1em;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--fg)}
+details{border-top:1px solid var(--line);padding:6px 0}summary{cursor:pointer;padding:6px 0}.list a{display:block;padding:6px 0}
+</style></head><body><main><h1>페이지를 준비 중입니다</h1><p>새로 올라온 사업장 페이지는 몇 분 뒤에 열립니다. 잠시 후 다시 열어 주세요.</p><p><a href="https://cleanup.seoul.go.kr/">정비사업 정보몽땅</a> · <a id="home" href="index.html">전체 목록</a></p></main><script>
+const p=location.pathname,i=p.lastIndexOf('/s/');
+document.getElementById('home').href=(i>=0?p.slice(0,i+1):p.slice(0,p.lastIndexOf('/')+1))+'index.html';
+</script></body></html>
